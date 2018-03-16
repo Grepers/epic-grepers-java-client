@@ -14,13 +14,12 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Group root = new Group();
-
-        WSClient wsClient = new WSClient(root);
-        wsClient.start(primaryStage);
-
         Scene scene = new Scene(root, 300, 275);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Epic Grepers");
         primaryStage.show();
+
+        WSClient wsClient = new WSClient(root);
+        wsClient.start(primaryStage);
     }
 }
