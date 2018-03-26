@@ -1,7 +1,6 @@
 package com.grepers.epicgrepersjavaclient.dto;
 
 import com.sun.javafx.geom.Vec2d;
-import javafx.geometry.Point2D;
 import lombok.Data;
 
 import java.util.UUID;
@@ -13,4 +12,7 @@ public class Actor {
     private Vec2d pos; // meters
     private Vec2d vel; // meters / seconds
     private Double rot; // radians
+    private Double width; // meters
+    private Double depth; // meters
+    private Double radius; // meters
 }
